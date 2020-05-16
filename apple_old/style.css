@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: none;
+    box-sizing: border-box;
+    font:  "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+.container{
+    height: 100vh;
+    overflow: hidden;
+    background : no-repeat url("hero.jpg") fixed;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+}
+.text-container{
+    max-width: 1000px;
+    text-align: center;
+    z-index: 1;
+    margin: auto;
+    color:rgba(0,0,0,0.4);
+}
+nav{
+    display: flex;
+    background:linear-gradient(#031822e0,#08405c46);
+    color: white;
+    border-radius: 5px ;
+    height: 30px;
+    font-size: 16px;
+}
+.nav-items{
+    flex: 1 1 0;
+    padding: 5px 10px;
+}
+.logo{
+    background-position: 50% 0;
+    background: no-repeat url("Apple_logo_black.svg") ;
+    background-size: contain;
+}
+.text{
+    margin-top: 100px;
+}
+.text-1{
+    font-size: 48px;
+    line-height: px;
+    font-weight: lighter;
+}
+.text-2{
+    font-size: 36px;
+    line-height: 36px;
+}
+.text-3{
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.products{
+    height: 30vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+.product{
+    flex: 1 1 0;
+}
+.product:nth-child(1){
+    background: url(promo_iphone5c.jpg);
+}
+.product:nth-child(2){
+    background: url(promo_iphone5s.jpg);
+}
+.product:nth-child(3){
+    background: url(promo_30_years.jpg);
+}
+.product:nth-child(4){
+    background: url(promo_supplier_responsibility.jpg);
+}
+footer{
+    font-size: 10px;
+    font-weight: lighter;
+    width: 1000px;
+    margin:20px auto;
+}
+footer div{
+    height: 20px;
+    box-sizing: border-box;
+}
+footer div:nth-child(1){
+    float: left;
+}
+footer div:nth-child(2){
+    float: right;
+}
+footer div:nth-child(3){
+    clear: both;
+}
