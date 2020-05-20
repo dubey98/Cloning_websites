@@ -39,7 +39,7 @@
 }
 /*header styling*/
 .main-headlines{
-    background-color: slateblue;
+    background-color: ghostwhite;
     display: grid;
     grid-template-columns: auto 400px;
     grid-template-rows:250px 250px;
@@ -51,6 +51,17 @@
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
+@media screen and (max-width: 800px){
+    .main-headlines{
+        background: tan;
+        grid-template-columns:auto;
+        grid-template-rows: 200px 200px 200px;
+    }
+    .header-item1{
+        grid-column: 1/2;
+        grid-row: 1/2; 
+    }
+}
 /*main styling*/
 main{
     margin: 0px 78.5px;
@@ -61,6 +72,7 @@ main{
     padding: 24px 0px 0px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 .latest-header{
     font-size: 28px;
@@ -69,7 +81,7 @@ main{
 }
 .latest-card{
     padding: 12px ;
-    flex-basis: 25% ;
+    width: 250px;
 }
 .card-content{
     font-size: 24px;
@@ -85,6 +97,19 @@ main{
 .card-content{
     line-height: 36px;
     margin: 5px 0px;
+}
+
+@media screen and (max-width: 800px){
+    main{
+        margin: 0px 20px ;
+        padding: 0px 10px;
+    }
+    .latest{
+        display: block;
+    }
+    .latest-card{
+        width: 100%;
+    }
 }
 /*footer styling*/
 .footer-wrapper{
